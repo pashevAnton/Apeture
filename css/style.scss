@@ -1,9 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+$grey: #C0C0C0;
 
 body {
   font-family: "Poppins", sans-serif;
+  font-weight: 400;
   background-color: #000;
-  color: white;
+  color: #fff;
 }
 
 .container {
@@ -33,7 +35,6 @@ body {
         display: flex;
         li {
           a {
-            font-weight: 400;
             font-size: 15px;
             line-height: 20px;
             color: #fff;
@@ -88,14 +89,12 @@ body {
       left: 50%;
       transform: translateX(-50%);
       > div {
-        color: #C0C0C0;
-        font-weight: 400;
+        color: $grey;
         font-size: 14px;
         line-height: 20px;
         text-align: center;
       }
       > h1 {
-        font-weight: 400;
         font-size: 54px;
         line-height: 59px;
         text-align: center;
@@ -104,7 +103,7 @@ body {
 
       >p {
         max-width: 580px;
-        color: #C0C0C0;
+        color: $grey;
         display: inline-block;
         text-align: center;
         line-height: 20px;
@@ -127,5 +126,94 @@ body {
       }
     }
   }
+}
 
+#cards {
+  >.container{
+    h2 {
+      font-size: 40px;
+      line-height: 42px;
+      text-align: center;
+      margin-top: 115px;
+      margin-bottom: 15px;
+    }
+
+    > p {
+      font-size: 23px;
+      line-height: 30px;
+      text-align: center;
+      color: $grey;
+      margin-bottom: 45px;
+    }
+
+    > .menu_cards {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      grid-column-gap: 16px;
+      grid-row-gap: 16px;
+      > div {
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        width: 576px;
+        height: 600px;
+        position: relative;
+        > .card_content{
+          position: absolute;
+          bottom: 30px;
+          left: 30px;
+          h5 {
+            font-size: 14px;
+            text-transform: uppercase;
+            margin-bottom: 15px;
+            letter-spacing: 2px;
+          }
+
+          p {
+            font-size: 14px;
+            line-height: 20px;
+            max-width: 516px;
+            color: $grey;
+            margin-bottom: 20px;
+          }
+
+          > .read_more {
+            background-color: #ffffff;
+            width: 143px;
+            height: 42px;
+            border-radius: 12px;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            transition: all 0.4s ease;
+
+            > .round {
+              width: 30px;
+              height: 30px;
+              border-radius: 20px;
+              background-color: #000;
+            }
+
+            > div {
+              color: #000000;
+              font-size: 15px;
+              line-height: 20px;
+              letter-spacing: 0.4px;
+              text-transform: uppercase;
+            }
+
+            &:hover {
+              background-color: lighten(#000, 40%);
+              .round{
+                background-color: #fff;
+              }
+              > div{
+                color: #ffffff;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
 }

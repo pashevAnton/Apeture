@@ -1,8 +1,9 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
 body {
   font-family: "Poppins", sans-serif;
+  font-weight: 400;
   background-color: #000;
-  color: white;
+  color: #fff;
 }
 
 .container {
@@ -33,7 +34,6 @@ body {
   display: flex;
 }
 #top_banner .inner_header > .right_side_header > nav li a {
-  font-weight: 400;
   font-size: 15px;
   line-height: 20px;
   color: #fff;
@@ -82,13 +82,11 @@ body {
 }
 #top_banner .main_banner > .content > div {
   color: #C0C0C0;
-  font-weight: 400;
   font-size: 14px;
   line-height: 20px;
   text-align: center;
 }
 #top_banner .main_banner > .content > h1 {
-  font-weight: 400;
   font-size: 54px;
   line-height: 59px;
   text-align: center;
@@ -115,6 +113,85 @@ body {
 }
 #top_banner .main_banner .menu_items > .item > img {
   margin-right: 6px;
+}
+
+#cards > .container h2 {
+  font-size: 40px;
+  line-height: 42px;
+  text-align: center;
+  margin-top: 115px;
+  margin-bottom: 15px;
+}
+#cards > .container > p {
+  font-size: 23px;
+  line-height: 30px;
+  text-align: center;
+  color: #C0C0C0;
+  margin-bottom: 45px;
+}
+#cards > .container > .menu_cards {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-column-gap: 16px;
+  grid-row-gap: 16px;
+}
+#cards > .container > .menu_cards > div {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 576px;
+  height: 600px;
+  position: relative;
+}
+#cards > .container > .menu_cards > div > .card_content {
+  position: absolute;
+  bottom: 30px;
+  left: 30px;
+}
+#cards > .container > .menu_cards > div > .card_content h5 {
+  font-size: 14px;
+  text-transform: uppercase;
+  margin-bottom: 15px;
+  letter-spacing: 2px;
+}
+#cards > .container > .menu_cards > div > .card_content p {
+  font-size: 14px;
+  line-height: 20px;
+  max-width: 516px;
+  color: #C0C0C0;
+  margin-bottom: 20px;
+}
+#cards > .container > .menu_cards > div > .card_content > .read_more {
+  background-color: #ffffff;
+  width: 143px;
+  height: 42px;
+  border-radius: 12px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  transition: all 0.4s ease;
+}
+#cards > .container > .menu_cards > div > .card_content > .read_more > .round {
+  width: 30px;
+  height: 30px;
+  border-radius: 20px;
+  background-color: #000;
+}
+#cards > .container > .menu_cards > div > .card_content > .read_more > div {
+  color: #000000;
+  font-size: 15px;
+  line-height: 20px;
+  letter-spacing: 0.4px;
+  text-transform: uppercase;
+}
+#cards > .container > .menu_cards > div > .card_content > .read_more:hover {
+  background-color: #666666;
+}
+#cards > .container > .menu_cards > div > .card_content > .read_more:hover .round {
+  background-color: #fff;
+}
+#cards > .container > .menu_cards > div > .card_content > .read_more:hover > div {
+  color: #ffffff;
 }
 
 /*# sourceMappingURL=style.css.map */
