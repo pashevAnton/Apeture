@@ -320,3 +320,29 @@ body {
     }
   }
 }
+
+#help {
+  .wrapper {
+    text-align: center;
+    margin-top: 115px;
+    position: relative;
+    > h3 {
+      font-size: 40px;
+      line-height: 42px;
+      margin-bottom: 15px;
+    }
+
+    > p {
+      font-size: 24px;
+      line-height: 30px;
+      margin-bottom: 15px;
+      color: $grey;
+    }
+
+    > .main_button {
+      position: absolute;
+      left: 50%;
+      transform: translateX(-50%);
+    }
+  }
+}

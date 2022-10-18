@@ -287,4 +287,26 @@ body {
   padding: 64px 46px;
 }
 
+#help .wrapper {
+  text-align: center;
+  margin-top: 115px;
+  position: relative;
+}
+#help .wrapper > h3 {
+  font-size: 40px;
+  line-height: 42px;
+  margin-bottom: 15px;
+}
+#help .wrapper > p {
+  font-size: 24px;
+  line-height: 30px;
+  margin-bottom: 15px;
+  color: #C0C0C0;
+}
+#help .wrapper > .main_button {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
 /*# sourceMappingURL=style.css.map */
