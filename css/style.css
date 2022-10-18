@@ -9,7 +9,6 @@ body {
 .container {
   max-width: 1170px;
   margin: 0 auto;
-  padding: 0 15px;
 }
 
 #top_banner .inner_header {
@@ -101,7 +100,7 @@ body {
 }
 #top_banner .main_banner .menu_items {
   position: absolute;
-  bottom: 0;
+  bottom: 40px;
   right: 40px;
   display: flex;
 }
@@ -115,27 +114,30 @@ body {
   margin-right: 6px;
 }
 
-#cards > .container h2 {
+#cards {
+  margin-bottom: 100px;
+}
+#cards h2 {
   font-size: 40px;
   line-height: 42px;
   text-align: center;
   margin-top: 115px;
   margin-bottom: 15px;
 }
-#cards > .container > p {
+#cards p {
   font-size: 23px;
   line-height: 30px;
   text-align: center;
   color: #C0C0C0;
   margin-bottom: 45px;
 }
-#cards > .container > .menu_cards {
+#cards .menu_cards {
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-column-gap: 16px;
   grid-row-gap: 16px;
 }
-#cards > .container > .menu_cards > div {
+#cards .menu_cards > div {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -143,25 +145,27 @@ body {
   height: 600px;
   position: relative;
 }
-#cards > .container > .menu_cards > div > .card_content {
+#cards .menu_cards > div > .card_content {
   position: absolute;
   bottom: 30px;
   left: 30px;
 }
-#cards > .container > .menu_cards > div > .card_content h5 {
+#cards .menu_cards > div > .card_content h5 {
   font-size: 14px;
   text-transform: uppercase;
   margin-bottom: 15px;
   letter-spacing: 2px;
 }
-#cards > .container > .menu_cards > div > .card_content p {
+#cards .menu_cards > div > .card_content p {
   font-size: 14px;
   line-height: 20px;
   max-width: 516px;
   color: #C0C0C0;
   margin-bottom: 20px;
+  text-align: left;
 }
-#cards > .container > .menu_cards > div > .card_content > .read_more {
+#cards .menu_cards > div > .card_content > .read_more {
+  cursor: pointer;
   background-color: #ffffff;
   width: 143px;
   height: 42px;
@@ -171,27 +175,67 @@ body {
   align-items: center;
   transition: all 0.4s ease;
 }
-#cards > .container > .menu_cards > div > .card_content > .read_more > .round {
+#cards .menu_cards > div > .card_content > .read_more > .round {
   width: 30px;
   height: 30px;
   border-radius: 20px;
   background-color: #000;
 }
-#cards > .container > .menu_cards > div > .card_content > .read_more > div {
+#cards .menu_cards > div > .card_content > .read_more > div {
   color: #000000;
   font-size: 15px;
   line-height: 20px;
   letter-spacing: 0.4px;
   text-transform: uppercase;
 }
-#cards > .container > .menu_cards > div > .card_content > .read_more:hover {
+#cards .menu_cards > div > .card_content > .read_more:hover {
   background-color: #666666;
 }
-#cards > .container > .menu_cards > div > .card_content > .read_more:hover .round {
+#cards .menu_cards > div > .card_content > .read_more:hover .round {
   background-color: #fff;
 }
-#cards > .container > .menu_cards > div > .card_content > .read_more:hover > div {
+#cards .menu_cards > div > .card_content > .read_more:hover > div {
   color: #ffffff;
+}
+
+#mountain > .inner_mountain {
+  height: 100vh;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  position: relative;
+}
+#mountain > .inner_mountain > .content {
+  position: absolute;
+  bottom: 260px;
+  right: 62px;
+  max-width: 300px;
+}
+#mountain > .inner_mountain > .content > h5 {
+  font-size: 14px;
+  line-height: 20px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+#mountain > .inner_mountain > .content > p {
+  font-size: 14px;
+  line-height: 20px;
+  color: #C0C0C0;
+}
+#mountain > .inner_mountain > .menu_items {
+  position: absolute;
+  bottom: 40px;
+  right: 40px;
+  display: flex;
+}
+#mountain > .inner_mountain > .menu_items > .item {
+  margin-right: 16px;
+}
+#mountain > .inner_mountain > .menu_items > .item:last-child {
+  margin-right: 0;
+}
+#mountain > .inner_mountain > .menu_items > .item > img {
+  margin-right: 6px;
 }
 
 /*# sourceMappingURL=style.css.map */
