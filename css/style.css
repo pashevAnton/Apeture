@@ -262,4 +262,29 @@ body {
   position: relative;
 }
 
+#clients {
+  margin-bottom: 100px;
+}
+#clients .wrapper {
+  margin-top: 115px;
+  text-align: center;
+}
+#clients .wrapper > h2 {
+  font-size: 40px;
+  line-height: 42px;
+  margin-bottom: 18px;
+}
+#clients .wrapper > p {
+  font-size: 24px;
+  line-height: 30px;
+  color: #C0C0C0;
+  margin-bottom: 45px;
+}
+#clients .wrapper > .clients {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 64px 46px;
+}
+
 /*# sourceMappingURL=style.css.map */

@@ -294,3 +294,29 @@ body {
   }
 }
 
+#clients {
+  margin-bottom: 100px;
+   .wrapper{
+    margin-top: 115px;
+     text-align: center;
+    > h2 {
+      font-size: 40px;
+      line-height: 42px;
+      margin-bottom: 18px;
+    }
+
+    > p {
+      font-size: 24px;
+      line-height: 30px;
+      color: $grey;
+      margin-bottom: 45px;
+    }
+    
+    > .clients {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 64px 46px;
+    }
+  }
+}
