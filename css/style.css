@@ -11,6 +11,56 @@ body {
   margin: 0 auto;
 }
 
+.menu_items {
+  position: absolute;
+  bottom: 40px;
+  right: 40px;
+  display: flex;
+}
+.menu_items > .item {
+  margin-right: 16px;
+}
+.menu_items > .item:last-child {
+  margin-right: 0;
+}
+.menu_items > .item > img {
+  margin-right: 6px;
+}
+
+.main_button {
+  cursor: pointer;
+  background-color: #ffffff;
+  width: 143px;
+  height: 42px;
+  border-radius: 12px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  transition: all 0.4s ease;
+}
+.main_button > .round {
+  width: 30px;
+  height: 30px;
+  border-radius: 20px;
+  background-color: #000;
+}
+.main_button > div {
+  color: #000000;
+  font-size: 15px;
+  line-height: 20px;
+  letter-spacing: 0.4px;
+  text-transform: uppercase;
+}
+.main_button:hover {
+  background-color: #666666;
+}
+.main_button:hover .round {
+  background-color: #fff;
+}
+.main_button:hover > div {
+  color: #ffffff;
+}
+
 #top_banner .inner_header {
   margin-top: 30px;
   margin-bottom: 25px;
@@ -98,21 +148,6 @@ body {
   text-align: center;
   line-height: 20px;
 }
-#top_banner .main_banner .menu_items {
-  position: absolute;
-  bottom: 40px;
-  right: 40px;
-  display: flex;
-}
-#top_banner .main_banner .menu_items > .item {
-  margin-right: 16px;
-}
-#top_banner .main_banner .menu_items > .item:last-child {
-  margin-right: 0;
-}
-#top_banner .main_banner .menu_items > .item > img {
-  margin-right: 6px;
-}
 
 #cards {
   margin-bottom: 100px;
@@ -164,39 +199,6 @@ body {
   margin-bottom: 20px;
   text-align: left;
 }
-#cards .menu_cards > div > .card_content > .read_more {
-  cursor: pointer;
-  background-color: #ffffff;
-  width: 143px;
-  height: 42px;
-  border-radius: 12px;
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  transition: all 0.4s ease;
-}
-#cards .menu_cards > div > .card_content > .read_more > .round {
-  width: 30px;
-  height: 30px;
-  border-radius: 20px;
-  background-color: #000;
-}
-#cards .menu_cards > div > .card_content > .read_more > div {
-  color: #000000;
-  font-size: 15px;
-  line-height: 20px;
-  letter-spacing: 0.4px;
-  text-transform: uppercase;
-}
-#cards .menu_cards > div > .card_content > .read_more:hover {
-  background-color: #666666;
-}
-#cards .menu_cards > div > .card_content > .read_more:hover .round {
-  background-color: #fff;
-}
-#cards .menu_cards > div > .card_content > .read_more:hover > div {
-  color: #ffffff;
-}
 
 #mountain > .inner_mountain {
   height: 100vh;
@@ -222,20 +224,42 @@ body {
   line-height: 20px;
   color: #C0C0C0;
 }
-#mountain > .inner_mountain > .menu_items {
-  position: absolute;
-  bottom: 40px;
-  right: 40px;
+
+#tools > .wrapper {
   display: flex;
 }
-#mountain > .inner_mountain > .menu_items > .item {
-  margin-right: 16px;
+#tools > .wrapper > .left_tools {
+  width: 50%;
 }
-#mountain > .inner_mountain > .menu_items > .item:last-child {
-  margin-right: 0;
+#tools > .wrapper > .left_tools > .content {
+  max-width: 514px;
+  margin: 175px 110px 155px 100px;
 }
-#mountain > .inner_mountain > .menu_items > .item > img {
-  margin-right: 6px;
+#tools > .wrapper > .left_tools > .content > .above_title {
+  font-size: 14px;
+  line-height: 20px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: #C0C0C0;
+  margin-bottom: 8px;
+}
+#tools > .wrapper > .left_tools > .content > h3 {
+  font-size: 28px;
+  line-height: 32px;
+  margin-bottom: 18px;
+}
+#tools > .wrapper > .left_tools > .content > .subtitle {
+  font-size: 14px;
+  line-height: 20px;
+  margin-bottom: 20px;
+}
+#tools > .wrapper > .right_tools {
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 80vh;
+  width: 50%;
+  position: relative;
 }
 
 /*# sourceMappingURL=style.css.map */
