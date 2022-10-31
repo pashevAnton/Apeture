@@ -11,7 +11,37 @@ body {
 .container {
   max-width: 1170px;
   margin: 0 auto;
+  padding: 0 15px;
 }
+
+.hamburger {
+  display: none;
+  cursor: pointer;
+  > .line {
+    width: 24px;
+    height: 3px;
+    background-color: #fff;
+    display: block;
+    margin: 6px auto;
+    transition: all 0.3s ease-in-out;
+    border-radius: 5px;
+    &.is-active{
+      transform: translateY(9px) rotate(45deg); }
+    &.is-active:nth-child(2) {
+      opacity: 0; }
+    &.is-active:nth-child(3) {
+      transform: translateY(-9px) rotate(-45deg); }
+    &.not_active{
+      transform: translateY(9px) rotate(45deg); }
+    &.not_active:nth-child(2) {
+      opacity: 0; }
+    &.not_active:nth-child(3) {
+      transform: translateY(-9px) rotate(-45deg); }
+  }
+}
+
+
+
 
 .menu_items {
   position: absolute;
@@ -116,7 +146,10 @@ body {
     >.right_side_header {
       display: flex;
       align-items: center;
-      > nav {
+      > .is-active{
+        display: block;
+      }
+      > .menu_top {
         > ul{
           list-style: none;
           display: flex;
@@ -219,18 +252,18 @@ body {
   }
 
    .menu_cards {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-column-gap: 16px;
-    grid-row-gap: 16px;
+     display: grid;
+     grid-template-columns: 1fr 1fr;
+     grid-column-gap: 16px;
+     grid-row-gap: 16px;
+     justify-content: center;
 
-    > div {
-      background-position: center;
-      background-repeat: no-repeat;
-      background-size: cover;
-      width: 576px;
-      height: 600px;
-      position: relative;
+     > div {
+       background-position: center;
+       background-repeat: no-repeat;
+       background-size: cover;
+       height: 600px;
+       position: relative;
 
       > .card_content {
         position: absolute;
@@ -437,6 +470,7 @@ body {
           height: 50px;
           border-radius: 10px;
           padding-left: 15px;
+          padding-right: 83px;
           font-size: 16px;
         }
         > .main_button {

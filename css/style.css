@@ -9,6 +9,39 @@ body {
 .container {
   max-width: 1170px;
   margin: 0 auto;
+  padding: 0 15px;
+}
+
+.hamburger {
+  display: none;
+  cursor: pointer;
+}
+.hamburger > .line {
+  width: 24px;
+  height: 3px;
+  background-color: #fff;
+  display: block;
+  margin: 6px auto;
+  transition: all 0.3s ease-in-out;
+  border-radius: 5px;
+}
+.hamburger > .line.is-active {
+  transform: translateY(9px) rotate(45deg);
+}
+.hamburger > .line.is-active:nth-child(2) {
+  opacity: 0;
+}
+.hamburger > .line.is-active:nth-child(3) {
+  transform: translateY(-9px) rotate(-45deg);
+}
+.hamburger > .line.not_active {
+  transform: translateY(9px) rotate(45deg);
+}
+.hamburger > .line.not_active:nth-child(2) {
+  opacity: 0;
+}
+.hamburger > .line.not_active:nth-child(3) {
+  transform: translateY(-9px) rotate(-45deg);
 }
 
 .menu_items {
@@ -108,18 +141,21 @@ body {
   display: flex;
   align-items: center;
 }
-#top_banner .inner_header > .right_side_header > nav > ul {
+#top_banner .inner_header > .right_side_header > .is-active {
+  display: block;
+}
+#top_banner .inner_header > .right_side_header > .menu_top > ul {
   list-style: none;
   display: flex;
 }
-#top_banner .inner_header > .right_side_header > nav > ul li a {
+#top_banner .inner_header > .right_side_header > .menu_top > ul li a {
   font-size: 15px;
   line-height: 20px;
   color: #fff;
   margin-right: 32px;
   position: relative;
 }
-#top_banner .inner_header > .right_side_header > nav > ul li a::after {
+#top_banner .inner_header > .right_side_header > .menu_top > ul li a::after {
   width: 100%;
   height: 2px;
   background-color: #fff;
@@ -130,7 +166,7 @@ body {
   opacity: 0;
   transition: 0.4s ease all;
 }
-#top_banner .inner_header > .right_side_header > nav > ul li a:hover:after {
+#top_banner .inner_header > .right_side_header > .menu_top > ul li a:hover:after {
   opacity: 1;
 }
 #top_banner .inner_header > .right_side_header > ._btn {
@@ -201,12 +237,12 @@ body {
   grid-template-columns: 1fr 1fr;
   grid-column-gap: 16px;
   grid-row-gap: 16px;
+  justify-content: center;
 }
 #cards .menu_cards > div {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  width: 576px;
   height: 600px;
   position: relative;
 }
@@ -386,6 +422,7 @@ body {
   height: 50px;
   border-radius: 10px;
   padding-left: 15px;
+  padding-right: 83px;
   font-size: 16px;
 }
 #footer .wrapper > .newsletter > form > .main_button {
